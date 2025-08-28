@@ -1,3 +1,4 @@
+please follow this after installing EKS cluster
 # 2048 App
 
 ## Create Fargate profile
