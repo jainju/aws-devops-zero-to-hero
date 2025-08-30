@@ -8,15 +8,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deployment-2048
-  namespace: 2048-game
+  namespace: game-2048
 spec:
   selector:
-    matchlables:
+    matchLables:
      app.kubernetes.io/name: app-2048
   replicas: 5
   template:
     metadata:
-      lables:
+      labels:
         app.kubernetes.io/name: app-2048
     spec:
       containers:
@@ -30,7 +30,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: service-2048
-  namespace: 2048-game
+  namespace: game-2048
 spec:
   ports:
     - port: 80
